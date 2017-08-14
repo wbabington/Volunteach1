@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.welsley.volunteach.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/volunteach_logo"
+            android:layout_width="189dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="36dp"
+            app:srcCompat="@drawable/volunteach_logo"
+            android:layout_above="@+id/editUsername"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_above="@+id/editPassword"
+            android:layout_alignStart="@+id/editPassword"
+            android:layout_marginBottom="28dp" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_above="@+id/buttonLogin"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonRegister"
+            android:layout_alignStart="@+id/buttonRegister"
+            android:layout_marginBottom="18dp"
+            android:onClick="login"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="77dp"
+            android:onClick="register"
+            android:text="Register" />
+    </RelativeLayout>
+</LinearLayout>

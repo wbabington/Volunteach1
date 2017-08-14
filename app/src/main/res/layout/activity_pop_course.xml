@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.example.welsley.volunteach.popCourse">
+
+    <TextView
+        android:id="@+id/tvCourseHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Course Name"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/tvCourseDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseHeading"
+        android:layout_below="@+id/tvCourseHeading"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorWhite"
+        android:text="Description"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvCourseBranchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseInst"
+        android:layout_below="@+id/tvCourseInst"
+        android:layout_marginTop="54dp"
+        android:text="Branch Name"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvCourseBranchAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch Address"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/tvCourseBranchName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvCourseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseDesc"
+        android:layout_below="@+id/tvCourseDesc"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:text="Time"
+        android:layout_toStartOf="@+id/tvCourseLength" />
+
+    <TextView
+        android:id="@+id/tvCourseLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:layout_alignBaseline="@+id/tvCourseTime"
+        android:layout_alignBottom="@+id/tvCourseTime"
+        android:layout_alignStart="@+id/btnBook"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="44dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvCourseInst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvCourseTime"
+        android:layout_below="@+id/tvCourseTime"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:text="Instructor"
+        android:layout_toStartOf="@+id/tvCourseLength"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Book Course"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
